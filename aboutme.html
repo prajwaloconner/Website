@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Prajwal O'Connor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Changed font family to Roboto */
+            background-color: #0e0e0e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url("https://giffiles.alphacoders.com/210/210054.gif"); 
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+            font-family: 'Roboto', sans-serif; /* Changed font family to Roboto */
+            height: 70vh; /* Changed from 100vh to 70vh */
+        }
+        header::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .intro {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-top: 10px;
+        }
+        .form-container input,
+        .form-container textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+        }
+        .form-container button {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d4af37;
+            color: #0e0e0e;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #bf9c2d;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffffff;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+            color: #d4af37;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 0;
+                height: 50vh;
+            }
+            .form-container {
+                padding: 15px;
+            }
+            .form-container input,
+            .form-container textarea {
+                font-size: 14px;
+            }
+            .form-container button {
+                font-size: 14px;
+                padding: 8px;
+            }
+            .social-icons a {
+                margin: 0 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 0;
+                height: 40vh;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            .form-container {
+                padding: 10px;
+            }
+            .form-container input,
+            .form-container textarea {
+                font-size: 12px;
+            }
+            .form-container button {
+                font-size: 12px;
+                padding: 6px;
+            }
+            .quote {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <p class="intro">Get in touch with Prajwal. Feel free to drop a message!</p>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form action="https://formspree.io/f/xbjnekad" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="quote">
+            <p>"We are who we are. The real question is, who do you want to be?"</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/prajwaloconner" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/prajwal-b-0ab0a22a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>

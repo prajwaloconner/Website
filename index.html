@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url("https://media1.tenor.com/m/OxCemKA3yPwAAAAC/oppenheimer-oppenheimer-movie.gif");
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .intro {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+        }
+        .quote p {
+            font-size: 1.2em;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #7b68ee;
+        }
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #skills ul li {
+            margin: 5px;
+        }
+        #skills ul li span {
+            background-color: #7b68ee;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #skills-details div {
+            display: none;
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #certifications, #college-wins {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 0;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            .quote p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 0;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+            .social-icons a {
+                margin: 0 5px;
+            }
+            .quote p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="profile-pic" src="profile-pic.jpg" alt="Profile Picture">
+        <h1>Prajwal B</h1>
+        <p class="intro">An Engineer | Security Expert | Problem Solver</p>
+        <p id="greeting"></p>
+        <div class="social-icons" style="position: relative; z-index: 50;">
+            <a href="https://github.com/prajwaloconner" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/prajwal-b-0ab0a22a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I'm Prajwal, an accomplished engineer with a track record of excellence. With a solid CGPA of 9.12, I specialize in a myriad of programming languages including core Java, Python, C, C++, and database management systems. Additionally, I possess advanced skills in Linux administration and security, making me a sought-after expert in the field.</p>
+            <p>Currently, I lead as the Head of the Security Club at The Oxford College of Engineering, where I drive initiatives focused on cybersecurity awareness and best practices. My dedication to coding excellence and problem-solving is evident in every project I undertake.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <ul>
+                <li><span id="java-skill">Java</span></li>
+                <li><span id="dbms-skill">DBMS</span></li>
+                <li><span id="python-skill">Python</span></li>
+                <li><span id="c-skill">C/C++</span></li>
+                <li><span id="linux-skill">Linux</span></li>
+                <li><span id="security-skill">Security</span></li>
+                <li><span id="lex-skill">Lex Tools</span></li>
+                <li><span id="azure-skill">Azure Cloud</span></li>
+                <li><span id="splunk-skill">Splunk</span></li>
+                <li><span id="docker-skill">Docker & Kubernetes</span></li>
+                <li><span id="golang-skill">Golang (In Progress)</span></li>
+                <li><span id="compiler-skill">Compiler Design</span></li>
+                <li><span id="quantum-skill">Quantum Computing</span></li>
+            </ul>
+            <div id="skills-details">
+                <div id="java-details">
+                    <h3>Java</h3>
+                    <p>Experienced in core Java, advanced Java, and Spring framework. Proficient in data structures and algorithms in Java.</p>
+                </div>
+                <div id="dbms-details">
+                    <h3>DBMS</h3>
+                    <p>Skilled in database management systems with hands-on experience in SQL and database design.</p>
+                </div>
+                <div id="python-details">
+                    <h3>Python</h3>
+                    <p>Proficient in Python programming with expertise in OpenCV, security tools, and custom security analysis tools development.</p>
+                </div>
+                <div id="c-details">
+                    <h3>C/C++</h3>
+                    <p>Strong knowledge of C and C++ programming, with a focus on data structures and algorithms.</p>
+                </div>
+                <div id="linux-details">
+                    <h3>Linux</h3>
+                    <p>Advanced skills in Linux administration, including shell scripting and system management.</p>
+                </div>
+                <div id="security-details">
+                    <h3>Security</h3>
+                    <p>In-depth knowledge of network security protocols, penetration testing, and secure coding practices. Proficient in tools such as Wireshark, Metasploit, and various encryption algorithms. Authored research papers on cybersecurity.</p>
+                </div>
+                <div id="lex-details">
+                    <h3>Lex Tools</h3>
+                    <p>Experienced with Lex tools for lexical analysis, currently working on a custom compiler project called Hopper.</p>
+                </div>
+                <div id="azure-details">
+                    <h3>Azure Cloud</h3>
+                    <p>Basic understanding of Azure cloud services, including deployment and management.</p>
+                </div>
+                <div id="splunk-details">
+                    <h3>Splunk</h3>
+                    <p>Familiar with the basics of Splunk for log management and data analysis.</p>
+                </div>
+                <div id="docker-details">
+                    <h3>Docker & Kubernetes</h3>
+                    <p>Knowledgeable in Docker containerization and Kubernetes orchestration for application deployment.</p>
+                </div>
+                <div id="golang-details">
+                    <h3>Golang (In Progress)</h3>
+                    <p>Currently learning Golang, focusing on its use in building efficient and scalable applications.</p>
+                </div>
+                <div id="compiler-details">
+                    <h3>Compiler Design</h3>
+                    <p>Working on the Hopper project, which involves creating a custom compiler using tools like Lex.</p>
+                </div>
+                <div id="quantum-details">
+                    <h3>Quantum Computing</h3>
+                    <p>Authored multiple research papers on quantum computing and currently developing encryption methods to protect against quantum computer attacks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>I have a strong track record of applying my technical skills in various projects. Please update this section with details of your professional experience.</p>
+        </section>
+        <section id="college-wins">
+            <h2>College Achievements</h2>
+            <p>To view my achievements and wins during my college years, please visit the <a href="certificates.html">college achievements page</a>.</p>
+        </section>
+        <section id="contact-me">
+            <h2>Contact me</h2>
+            <p>To contact me, please visit the <a href="aboutme.html">Contact Prajwal</a> page.</p>
+        </section>
+
+    </div>
+
+    <div class="quote">
+        <p>"We can only see a short distance ahead, but we can see plenty there that needs to be done." - Alan Turing</p>
+    </div>
+
+    <script>
+        // Get the current hour
+        var hour = new Date().getHours();
+        // Define greeting messages based on the time of day
+        var greeting;
+        if (hour < 12) {
+            greeting = "Good morning!";
+        } else if (hour < 18) {
+            greeting = "Good afternoon!";
+        } else if(hour<21) {
+            greeting = "Good evening!";
+        }
+        else{
+            greeting="Good Night!";
+        }
+        // Display the greeting in the header
+        document.getElementById("greeting").innerText = greeting;
+
+        // Function to show or hide skill details
+        function toggleSkillDetails(skillId) {
+            var skillDetails = document.getElementById(skillId + "-details");
+            var allSkillDetails = document.querySelectorAll("#skills-details div");
+            allSkillDetails.forEach(function(detail) {
+                if (detail !== skillDetails) {
+                    detail.style.display = "none";
+                }
+            });
+            if (skillDetails.style.display === "none" || skillDetails.style.display === "") {
+                skillDetails.style.display = "block";
+            } else {
+                skillDetails.style.display = "none";
+            }
+        }
+
+        // Add event listeners to skill spans
+        document.querySelectorAll("#skills ul li span").forEach(function(span) {
+            span.addEventListener("click", function() {
+                toggleSkillDetails(span.id.replace("-skill", ""));
+            });
+        });
+    </script>
+</body>
+</html>

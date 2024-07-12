@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal B - Certifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url("https://media1.tenor.com/m/Y84FrUqOt4MAAAAC/red-sky.gif");
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            position: relative;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .intro {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .certifications-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .certification-item {
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            padding: 10px;
+            width: calc(50% - 20px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .certification-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .certification-description {
+            margin-top: 10px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #7b68ee;
+        }
+        /* Snowfall Effect */
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 10s;
+            animation-delay: 0s;
+        }
+        .snowflake:nth-child(2) {
+            left: 20%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+        .snowflake:nth-child(3) {
+            left: 30%;
+            animation-duration: 14s;
+            animation-delay: 4s;
+        }
+        .snowflake:nth-child(4) {
+            left: 40%;
+            animation-duration: 16s;
+            animation-delay: 6s;
+        }
+        .snowflake:nth-child(5) {
+            left: 50%;
+            animation-duration: 18s;
+            animation-delay: 8s;
+        }
+        .snowflake:nth-child(6) {
+            left: 60%;
+            animation-duration: 20s;
+            animation-delay: 10s;
+        }
+        .snowflake:nth-child(7) {
+            left: 70%;
+            animation-duration: 22s;
+            animation-delay: 12s;
+        }
+        .snowflake:nth-child(8) {
+            left: 80%;
+            animation-duration: 24s;
+            animation-delay: 14s;
+        }
+        .snowflake:nth-child(9) {
+            left: 90%;
+            animation-duration: 26s;
+            animation-delay: 16s;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 0;
+            }
+            .certification-item {
+                width: calc(100% - 20px);
+            }
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                margin-left: 0;
+                margin-top: 20px;
+                padding-left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 30px 0;
+            }
+            .certification-item {
+                width: calc(100% - 20px);
+            }
+            .social-icons a {
+                margin: 0 5px;
+            }
+        }
+        .quote {
+            margin: 40px 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Certifications</h1>
+        <p class="intro">Some of my important wins in competitions held in College.</p>
+        <div class="social-icons" style="position: relative; z-index: 50;">
+            <a href="https://github.com/prajwaloconner" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://in.linkedin.com/in/prajwal-b-0ab0a22a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <section class="certifications-list">
+                <div class="certification-item">
+                    <img src="csi.jpg" alt="Certification 1">
+                    <div class="certification-description">
+                        <h3>Poster Presentation by CSI</h3>
+                        <p>Won first prize in the poster presentation competition held by the Computer Society of India. My topic was "Smart Quill," where I discussed its technical features, pros and cons, and potential future improvements.</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <img src="codegolf.jpg" alt="Certification 2">
+                    <div class="certification-description">
+                        <h3>Code Golf</h3>
+                        <p>Secured third place in the Code Golf competition, where we solved basic LeetCode problems. Despite technical difficulties with the website at the start, I persevered and managed to finish strongly, even though I initially lost time rewriting my code.</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <img src="battle of opinions.jpg" alt="Certification 3">
+                    <div class="certification-description">
+                        <h3>Battle of Opinions</h3>
+                        <p>Achieved second place in the seminar competition "Battle of Opinions" during my fifth semester. The competition comprised two rounds: discussing whether technology is essential or a distraction, and whether AI is causing job losses. I took a contrarian stance, arguing that AI is not taking over jobs, and found the event both challenging and rewarding.</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <img src="war of worlds.jpg" alt="Certification 4">
+                    <div class="certification-description">
+                        <h3>War of Worlds</h3>
+                        <p>Won the seminar competition on whether AI is a threat to future engineers and scholars. I presented my honest views, quoting Oppenheimer and Feynman, and emerged victorious in one of the most competitive and rewarding seminars I've participated in.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="quote">
+                "Love is the one thing that transcends time and space." - Interstellar
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="snow">
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+                <div class="snowflake"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
